@@ -1,0 +1,35 @@
+<!-- Header component start-->
+<app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
+<!-- Header component end-->
+<app-top-banner [data]="data"></app-top-banner>
+<div class="main-content">
+  <section>
+    <div class="container">
+    <div class="row">
+      <div *ngFor="let list of List" class="col-sm-12">
+        <div class="consult-services wow fadeInUp contact-detail text-center">
+          <div class="circle-effect"> <i aria-hidden="true" class="fa fa-envelope"></i> </div>
+          <h4 class="mb-2">{{ list.title }}</h4>
+          <p class="mb-0">{{ list.address }}</p>
+          <p class="mb-0">{{ list.address1 }}</p>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Contact us page -->
+  
+  <!-- Contact us page End-->
+</div>
+<!-- Footer start -->
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>
+<!-- Footer end -->
+
+
+<style>
+
+  .a {
+    text-decoration: bold;
+  }
+</style>
